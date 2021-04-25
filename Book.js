@@ -9,6 +9,7 @@ class Book {
     }
     set out(out) {
         this._out = out;
+        
         if (out)  {
             const newDueDate = new Date();
             newDueDate.setDate(newDueDate.getDate() + 14);
